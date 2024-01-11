@@ -1,0 +1,14 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "description": "Postgres packages",
+            "matchDatasources": ["nuget"],
+            "matchPackagePrefixes": [
+                "Npgsql"
+            ],
+            "matchUpdateTypes": ["major"],
+            "enabled": false
+        }
+    ]
+}

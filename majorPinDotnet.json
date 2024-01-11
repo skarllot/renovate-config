@@ -1,0 +1,22 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchDatasources":["dotnet-version"],
+            "matchUpdateTypes":["major"],
+            "enabled": false
+        },
+        {
+            "description": "Packages which need major versions to be in sync with the .NET version",
+            "matchDatasources": ["nuget", "docker"],
+            "matchPackagePrefixes": [
+                "Microsoft.Bcl.AsyncInterfaces",
+                "Microsoft.EntityFrameworkCore",
+                "Microsoft.Extensions.",
+                "mcr.microsoft.com/dotnet"
+            ],
+            "matchUpdateTypes": ["major"],
+            "enabled": false
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "semanticCommits": "enabled",
+    "semanticCommitType": "build",
+    "labels": ["dependencies"],
+    "packageRules": [
+        {
+            "matchDatasources": ["nuget", "dotnet-version"],
+            "addLabels": [".NET"],
+            "semanticCommitType": "build"
+        },
+        {
+            "matchDatasources": ["npm"],
+            "addLabels": ["javascript"],
+            "semanticCommitType": "build"
+        },
+        {
+            "matchDatasources": ["docker"],
+            "addLabels": ["docker"],
+            "semanticCommitType": "build"
+        },
+        {
+            "matchDatasources": ["github-tags", "github-runners"],
+            "addLabels": ["github_actions"],
+            "semanticCommitType": "ci"
+        },
+        {
+            "matchDepTypes":["devDependencies"],
+            "semanticCommitScope": "deps-dev"
+        }
+    ]
+}

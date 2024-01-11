@@ -1,0 +1,23 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "groupName": "Npgsql",
+            "matchPackagePrefixes": [
+                "Npgsql"
+            ]
+        },
+        {
+            "groupName": "xUnit.net",
+            "matchPackagePrefixes": [
+                "xunit"
+            ]
+        },
+        {
+            "groupName": "coverlet",
+            "matchPackagePrefixes": [
+                "coverlet"
+            ]
+        }
+    ]
+}
