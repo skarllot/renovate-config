@@ -10,7 +10,7 @@
             "description": "Packages which need major versions to be in sync with the .NET version",
             "matchDatasources": ["nuget", "docker"],
             "matchPackagePrefixes": [
-                "Microsoft.Bcl.AsyncInterfaces",
+                "Microsoft.Bcl.",
                 "Microsoft.EntityFrameworkCore",
                 "Microsoft.Extensions.",
                 "mcr.microsoft.com/dotnet"

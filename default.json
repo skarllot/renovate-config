@@ -2,17 +2,16 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:recommended",
+        ":disableDependencyDashboard",
+        ":disableRateLimiting",
         "github>skarllot/renovate-config:category",
         "github>skarllot/renovate-config:majorPinDotnet",
         "github>skarllot/renovate-config:majorPinNpgsql",
         "github>skarllot/renovate-config:pinDotnetAnalyzer",
         "github>skarllot/renovate-config:groupDotnet"
     ],
-    "prHourlyLimit": 0,
     "npm": {
         "rangeStrategy": "bump"
     },
-    "vulnerabilityAlerts": {
-        "labels": ["security"]
-    }
+    "platformCommit": true
 }

@@ -2,21 +2,169 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "packageRules": [
         {
+            "matchDatasources": ["nuget"],
+            "groupName": "AndroidX",
+            "matchPackagePrefixes": [
+                "Xamarin.AndroidX.",
+                "Xamarin.Android.Glide"
+            ],
+            "matchPackageNames":[
+                "Xamarin.Build.Download",
+                "Xamarin.Google.Android.Material",
+                "Xamarin.Google.Crypto.Tink.Android",
+                "Xamarin.GooglePlayServices.Maps"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "AspNetCore",
+            "matchPackagePrefixes": [
+                "Microsoft.AspNetCore."
+            ],
+            "matchPackageNames":[
+                "Microsoft.Extensions.Features",
+                "Microsoft.JSInterop"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "AspNetCore Health Checks",
+            "matchPackagePrefixes": [
+                "AspNetCore.HealthChecks."
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Avalonia",
+            "matchPackagePrefixes": [
+                "Avalonia"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Azure",
+            "matchPackagePrefixes": [
+                "Azure.",
+                "Microsoft.Azure."
+            ],
+            "matchPackageNames":[
+                "Microsoft.Extensions.Azure"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "BenchmarkDotNet",
+            "matchPackagePrefixes": [
+                "BenchmarkDotNet"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "BCL",
+            "matchPackagePrefixes": [
+                "Microsoft.Bcl.",
+                "System."
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "coverlet",
+            "matchPackagePrefixes": [
+                "coverlet"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Entity Framework Core",
+            "matchPackagePrefixes": [
+                "Microsoft.EntityFrameworkCore"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Grpc",
+            "matchPackagePrefixes": [
+                "Grpc."
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Microsoft AppCenter",
+            "matchPackagePrefixes": [
+                "Microsoft.AppCenter."
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Microsoft DotNet",
+            "matchPackagePrefixes": [
+                "Microsoft.DotNet."
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Microsoft Extensions",
+            "matchPackagePrefixes": [
+                "Microsoft.Extensions."
+            ],
+            "excludePackageNames":[
+                "Microsoft.Extensions.Azure",
+                "Microsoft.Extensions.Features"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
             "groupName": "Npgsql",
             "matchPackagePrefixes": [
                 "Npgsql"
             ]
         },
         {
-            "groupName": "xUnit.net",
+            "matchDatasources": ["nuget"],
+            "groupName": "Reactive Extensions",
             "matchPackagePrefixes": [
-                "xunit"
+                "System.Reactive",
+                "Microsoft.Reactive"
             ]
         },
         {
-            "groupName": "coverlet",
+            "matchDatasources": ["nuget"],
+            "groupName": "Roslyn",
             "matchPackagePrefixes": [
-                "coverlet"
+                "Microsoft.CodeAnalysis"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "SkiaSharp",
+            "matchPackagePrefixes": [
+                "SkiaSharp.",
+                "Svg."
+            ],
+            "matchPackageNames":[
+                "ShimSkiaSharp",
+                "Fizzler"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Spectre",
+            "matchPackagePrefixes": [
+                "Spectre.Console"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "Xamarin Forms",
+            "matchPackagePrefixes": [
+                "Xamarin.Forms"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "xUnit.net",
+            "matchPackagePrefixes": [
+                "xunit"
             ]
         }
     ]

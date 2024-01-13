@@ -10,7 +10,7 @@
             "description": "Pin code analyzer libraries",
             "matchDatasources": ["nuget"],
             "matchPackagePrefixes": [
-                "Microsoft.CodeAnalysis.CSharp"
+                "Microsoft.CodeAnalysis"
             ],
             "enabled": false
         }

@@ -1,8 +1,11 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "semanticCommits": "enabled",
-    "semanticCommitType": "build",
-    "labels": ["dependencies"],
+    "extends":[
+        ":semanticCommits",
+        ":semanticCommitTypeAll(build)",
+        ":label(dependencies)",
+        ":enableVulnerabilityAlertsWithLabel(security)"
+    ],
     "packageRules": [
         {
             "matchDatasources": ["nuget", "dotnet-version"],
@@ -20,9 +23,10 @@
             "semanticCommitType": "build"
         },
         {
-            "matchDatasources": ["github-tags", "github-runners"],
+            "matchManagers":["github-actions"],
             "addLabels": ["github_actions"],
-            "semanticCommitType": "ci"
+            "semanticCommitType": "ci",
+            "semanticCommitScope": "github-action"
         },
         {
             "matchDepTypes":["devDependencies"],
