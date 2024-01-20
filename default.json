@@ -2,6 +2,11 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         ":disableRateLimiting",
+        "schedule:daily",
+        "security:openssf-scorecard",
+        "preview:dockerVersions",
+        "docker:pinDigests",
+        "helpers:pinGitHubActionDigests",
         "github>skarllot/renovate-config:recommended",
         "github>skarllot/renovate-config:category",
         "github>skarllot/renovate-config:majorPinDotnet",
