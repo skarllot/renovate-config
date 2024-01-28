@@ -138,7 +138,7 @@
             "matchDatasources": ["nuget"],
             "groupName": "SkiaSharp",
             "matchPackagePrefixes": [
-                "SkiaSharp.",
+                "SkiaSharp",
                 "Svg."
             ],
             "matchPackageNames":[
