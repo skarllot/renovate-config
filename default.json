@@ -17,5 +17,9 @@
     "npm": {
         "rangeStrategy": "bump"
     },
-    "platformCommit": true
+    "platformCommit": true,
+    "minimumReleaseAge": "3 days",
+    "major": {
+        "minimumReleaseAge": "7 days"
+    }
 }
