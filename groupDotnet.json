@@ -121,6 +121,13 @@
         },
         {
             "matchDatasources": ["nuget"],
+            "groupName": "OneOf",
+            "matchPackagePrefixes": [
+                "OneOf"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
             "groupName": "Reactive Extensions",
             "matchPackagePrefixes": [
                 "System.Reactive",
