@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: 🛡️ Harden Runner
-        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895 # v2.6.1
+        uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
         with:
           disable-sudo: true
           egress-policy: block
@@ -28,18 +28,13 @@ jobs:
             registry.npmjs.org:443
 
       - name: 🛒 Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
       - name: 🧰 Setup Node
-        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
-          node-version: 20.x
-
-      - name: 🗃️ Setup NPM cache
-        uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3.3.2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node
+          node-version: 20
+          cache: npm
 
       - name: ✅ Validate
         run: |
