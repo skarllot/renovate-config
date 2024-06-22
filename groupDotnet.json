@@ -82,6 +82,13 @@
         },
         {
             "matchDatasources": ["nuget"],
+            "groupName": "FxKit",
+            "matchPackagePrefixes": [
+                "FxKit"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
             "groupName": "Grpc",
             "matchPackagePrefixes": [
                 "Grpc."
