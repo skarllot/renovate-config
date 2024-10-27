@@ -121,6 +121,14 @@
         },
         {
             "matchDatasources": ["nuget"],
+            "groupName": "Nerdbank.GitVersioning",
+            "matchPackageNames": [
+                "Nerdbank.GitVersioning",
+                "nbgv"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
             "groupName": "Npgsql",
             "matchPackagePrefixes": [
                 "Npgsql"
