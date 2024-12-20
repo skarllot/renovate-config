@@ -13,7 +13,8 @@
                 "Microsoft.Bcl.",
                 "Microsoft.EntityFrameworkCore",
                 "Microsoft.Extensions.",
-                "mcr.microsoft.com/dotnet"
+                "mcr.microsoft.com/dotnet",
+                "System."
             ],
             "matchUpdateTypes": ["major"],
             "enabled": false
