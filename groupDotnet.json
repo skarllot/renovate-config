@@ -177,6 +177,13 @@
         },
         {
             "matchDatasources": ["nuget"],
+            "groupName": "System.IO.Abstractions",
+            "matchPackagePrefixes": [
+                "TestableIO.System.IO"
+            ]
+        },
+        {
+            "matchDatasources": ["nuget"],
             "groupName": "Xamarin Forms",
             "matchPackagePrefixes": [
                 "Xamarin.Forms"
