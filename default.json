@@ -12,7 +12,8 @@
         "github>skarllot/renovate-config:majorPinDotnet",
         "github>skarllot/renovate-config:majorPinNpgsql",
         "github>skarllot/renovate-config:pinDotnetAnalyzer",
-        "github>skarllot/renovate-config:groupDotnet"
+        "github>skarllot/renovate-config:groupDotnet",
+        "github>skarllot/renovate-config:dotnetReplacements"
     ],
     "npm": {
         "rangeStrategy": "bump"
@@ -20,7 +21,7 @@
     "git-submodules": {
         "enabled": true
     },
-    "platformCommit": true,
+    "platformCommit": "enabled",
     "minimumReleaseAge": "3 days",
     "major": {
         "minimumReleaseAge": "7 days"
