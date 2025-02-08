@@ -17,6 +17,9 @@
     "npm": {
         "rangeStrategy": "bump"
     },
+    "git-submodules": {
+        "enabled": true
+    },
     "platformCommit": true,
     "minimumReleaseAge": "3 days",
     "major": {
