@@ -1,0 +1,19 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "description": "Pin Microsoft.NET.Test.SDK for pre-NET8 compatibility",
+            "matchDatasources": [
+                "nuget"
+            ],
+            "matchFileNames": [
+                "**/Directory.Packages.Net6.props"
+            ],
+            "matchPackageNames": [
+                "Microsoft.NET.Test.Sdk"
+            ],
+            "allowedVersions": "17.13.0",
+            "enabled": false
+        }
+    ]
+}

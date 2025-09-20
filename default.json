@@ -14,7 +14,8 @@
         "github>skarllot/renovate-config:majorPinNpgsql",
         "github>skarllot/renovate-config:pinDotnetAnalyzer",
         "github>skarllot/renovate-config:groupDotnet",
-        "github>skarllot/renovate-config:dotnetReplacements"
+        "github>skarllot/renovate-config:dotnetReplacements",
+        "github>skarllot/renovate-config:pinDotnetByFramework"
     ],
     "npm": {
         "rangeStrategy": "bump"
