@@ -12,8 +12,7 @@
             "matchPackageNames": [
                 "Microsoft.NET.Test.Sdk"
             ],
-            "allowedVersions": "17.13.0",
-            "enabled": false
+            "allowedVersions": "< 18.0.0"
         }
     ]
 }
