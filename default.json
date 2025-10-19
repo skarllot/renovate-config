@@ -23,6 +23,7 @@
     "git-submodules": {
         "enabled": true
     },
+    "rebaseWhen": "never",
     "platformCommit": "enabled",
     "minimumReleaseAge": "3 days",
     "major": {
