@@ -195,6 +195,13 @@
             "matchPackagePrefixes": [
                 "xunit"
             ]
+        },
+        {
+            "matchDatasources": ["nuget"],
+            "groupName": "CSharpier",
+            "matchPackagePrefixes": [
+                "csharpier"
+            ]
         }
     ]
 }
