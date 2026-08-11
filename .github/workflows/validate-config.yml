@@ -36,7 +36,7 @@ jobs:
           node-version: 22
 
       - name: 🗃️ Setup NPM cache
-        uses: actions/cache@a7833574556fa59680c1b7cb190c1735db73ebf0 # v5.0.0
+        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node
